@@ -79,7 +79,7 @@ a{text-decoration: none;}
     position: relative;
     height: calc(60vh - 20px);
     background: linear-gradient(
-        rgba(0, 0, 0, 0.61),rgba(0, 0, 0, 0.795)), url('/assets/informatique.jpg') no-repeat;
+        rgba(0, 0, 0, 0.329),rgba(0, 0, 0, 0.849)), url('/assets/informatique.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -90,7 +90,8 @@ a{text-decoration: none;}
     position: absolute;
     left: 0;
     padding: 20px 10px;
-    background: var(--white);
+    background: rgba(226, 219, 219, 0.425);
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -99,6 +100,7 @@ a{text-decoration: none;}
 }
 .icons{
     font-size: 1.4rem;
+    width: 100%;
 }
 .slider-right{
     width: 60%;
@@ -139,6 +141,50 @@ a{text-decoration: none;}
     font-weight: 600;
     border-radius: 5px;
     font-size: .8rem;
+}
+.apropos-rows{
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+.apropos-left{
+    flex: 1;
+    width: 100%;
+}
+.apropos-h2{
+    margin-bottom: 20px;
+}
+.apropos-h2::first-letter{
+    color: var(--red);
+    font-size: 2rem;
+}
+.aproposDesc-row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.apropos-desc{
+    text-align: justify;
+    color: var(--black);
+    font-size: .979rem;
+    line-height: 2;
+}
+.apropos-right{
+    flex: 1;
+}
+.aproposDesc-RightRow{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.aproposTech{
+    background: #7974743b;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.techno{
+    font-size: .9rem;
+    color: var(--black);
 }
 .about-titles{
     width: 100%;
@@ -182,7 +228,7 @@ a{text-decoration: none;}
     justify-content: space-between;
     gap: 20px;
 }
-.about-row:hover .demo-about{
+.about-left:hover .demo-about{
     transform: translateY(-100%);
 }
 .about-left{
@@ -393,6 +439,9 @@ textarea{
 }
 
 @media screen and (max-width: 414px){
+    .nav{
+        padding: 10px 20px;
+    }
     .title-h1{
         font-size: 1.8rem;
     }
@@ -411,6 +460,9 @@ textarea{
     }
     .slider-right{
         width: 90%;
+    }
+    .apropos-rows{
+        flex-direction: column;
     }
     .about-img2{
         position: absolute;
