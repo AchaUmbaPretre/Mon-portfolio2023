@@ -86,6 +86,7 @@ a{text-decoration: none;}
     align-items: center;
     justify-content: center;
 }
+
 .slider-left{
     position: absolute;
     left: 0;
@@ -185,11 +186,36 @@ a{text-decoration: none;}
     background: #7974743b;
     padding: 10px 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .techno{
     font-size: .9rem;
     color: var(--black);
 }
+.bar-techno{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--red);
+    animation: anibar 5s infinite;
+}
+@keyframes anibar {
+    0%{
+        width: 50%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 .about-titles{
     width: 100%;
     display: flex;
@@ -214,6 +240,18 @@ a{text-decoration: none;}
     height: 5px;
     background: var(--red);
     transform: translate(-50%, -50%);
+    animation: barline 5s infinite;
+}
+@keyframes barline {
+    0%{
+        width: 50px;
+    }
+    50%{
+        width: 10px;
+    }
+    100%{
+        width: 50%;
+    }
 }
 .about-desc{
     width: 50%;
