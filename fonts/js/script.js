@@ -1,8 +1,13 @@
 const headerUl = document.querySelector(".header-ul");
 const bars = document.querySelector(".bars");
+const body = document.querySelector(".slider")
 
 bars.addEventListener('click', ()=>{
     headerUl.classList.toggle('open')
+})
+
+body.addEventListener('click', ()=>{
+    headerUl.classList.remove("open")
 })
 
 

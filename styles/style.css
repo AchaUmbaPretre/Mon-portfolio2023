@@ -140,12 +140,20 @@ a{text-decoration: none;}
 }
 .btn{
     width: 150px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--red);
     color: var(--white);
     font-weight: 600;
     border-radius: 5px;
     font-size: .8rem;
+    height: 40px;
+}
+.btn:hover{
+    border: 2px solid var(--red);
+    background: transparent;
+    color: var(--white);
 }
 .apropos-rows{
     display: flex;
