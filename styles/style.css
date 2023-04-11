@@ -547,6 +547,11 @@ textarea{
     .slider{
         height: calc(90vh - 20px);
     }
+    .about-img2{
+        position: absolute;
+        left: 30;
+        top: 8;
+    }
     .input-form{
         padding: 8px 10px;
     }
