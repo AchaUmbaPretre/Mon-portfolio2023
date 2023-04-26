@@ -544,13 +544,60 @@ textarea{
 }
 
 @media screen and (max-width: 375px){
+    .nav{
+        padding: 8px 20px;
+    }
+    .logo{
+        font-size: .7rem;
+    }
     .slider{
-        height: calc(90vh - 20px);
+        height: calc(50vh - 20px);
+    }
+    .title-h1{
+        font-size: 1.4rem;
+    }
+    .title-h11{
+        font-size: 1.2rem;
+    }
+    .slider-desc{
+        font-size: .7rem;
+    }
+    .btn{
+        width: 90px;
+        font-size: .6rem;
+        height: 30px;
+    }
+    .icons{
+        font-size: 1rem;
+    }
+    .about-h2{
+        font-size: 1.5rem;
+    }
+    .about-desc,.apropos-desc{
+        font-size: .7rem;
+    }
+    .apropos-h2,.about-h3{
+        font-size: 1.4rem;
+    }
+    .about-row-desc{
+        font-size: .8rem;
     }
     .about-img2{
         position: absolute;
         left: 29;
         top: 8;
+    }
+    .abou-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        font-size: .6rem;
+        height: 35px;
+    }
+    .techno{
+        font-size: .7rem;
+        font-weight: bold;
     }
     .input-form{
         padding: 8px 10px;
